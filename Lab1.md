@@ -13,23 +13,19 @@ Test your code in Node.JS CLI
 3. Name 10 global modules/methods available in Node environment.
 
 ## Exercise 3 (Optional)
-`
-// Fix the slow function to be asynchronous/non-blocking
-function slow(callback){ 
-	for(let i=0; i<= 5e8; i++){}
-	if (Math.random() > 0.5) { 	
-		return callback("Error",null) 
+
+	// Fix the slow function to be asynchronous/non-blocking
+	function slow(callback){ 
+		for(let i=0; i<= 5e8; i++){}
+		if (Math.random() > 0.5) { 	
+			return callback("Error",null) 
+		} 
+		callback(null, {id:12345}) 
 	} 
-	callback(null, {id:12345}) 
-} 
 
-function exec(fn){ 
-   // Complete the code here to implement chaining with callback
-}
+	function exec(fn){ 
+		// Complete the code here to implement chaining with callback
+	}
 
-exec(slow).done(function(data){ console.log(data); })
-	    .fail(function(err){ console.log("Error: " + err); }); 
-`
-
-
-
+	exec(slow).done(function(data){ console.log(data); })
+		.fail(function(err){ console.log("Error: " + err); }); 
