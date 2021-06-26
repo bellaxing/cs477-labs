@@ -12,9 +12,12 @@ fs.readFile(path.join(__dirname, 'greet.txt'), 'utf8', function(err, data) {
 });
 
 # Explain the difference between process.nextTick and setImmediate?
-A function passed to process.nextTick() is going to be executed on the current iteration of the event loop, after the current operation ends. This means it will always execute before setTimeout and setImmediate.
-
-A setTimeout() callback with a 0ms delay is very similar to setImmediate(). The execution order will depend on various factors, but they will be both run in the next iteration of the event loop.
+1. callback of process.nextTick get executed multiple chances in one iteration - highest priotiry
+2. how many callbacks will be executed in one iteration? 
+process.nextTick() - all of callbacks in nextTick queue, drain out - Don't use while true loop on process.nextTick
+setImmediate - certain, the remaining for next iteration/tick
+3. process.nextTick - API provided natively by Node.js
+ setTimeout, setImmediate - provided by libuv
 
 # Name 10 global modules/methods available in Node environment.
 Buffer
