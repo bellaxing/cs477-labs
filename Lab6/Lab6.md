@@ -1,7 +1,6 @@
-# Lab 6 - Authentication & Authorization
-1. Continue Lab 6 based on Lab 5 to implement the features below for RESTful Application:
-    1. Add a login feature which username and password. If logged in successfully, return JWT, otherwise, error message.
-    2. For all CRUD operations on Books, they have to be authenticated. If call APIs withou JTW, return 401 unauthorized. With incorrect JWT, return 403 Forbidden. Only with correct, return JSON data
-    3. Use Postman test all APIs
-2. You can also download the server and client project to continue. Make sure you change all products APIs to books.
-3. Client: add login/logout features. And make sure only logged in users can CRUD books.
+# Lab 6 - MongoClient
+Tasks:Replace the in-memory database in Lab 5 to MongoDB. 
+
+## What you need to change?
+1. Server: you need to change models, controllers, and app.js
+2. Client: Using MongoDB, the primary key is "_id" instead of id. So you need to make the change.
