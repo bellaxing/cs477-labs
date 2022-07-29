@@ -7,3 +7,4 @@
 5. [Lab 5](https://github.com/bellaxing/cs477-labs/blob/main/Lab5/Lab5.md)
 6. [Lab 6](https://github.com/bellaxing/cs477-labs/blob/main/Lab6/Lab6.md)
 7. [Lab 7](https://github.com/bellaxing/cs477-labs/blob/main/Lab7/Lab7.md)
+8. [Lab 8](https://github.com/bellaxing/cs477-labs/blob/main/Lab8.md)
